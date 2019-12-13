@@ -1,10 +1,6 @@
 ﻿<%@ Page Title="Home Page" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeFile="Default.aspx.cs" Inherits="_Default" %>
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
- 
-    
-<!DOCTYPE html> 
-<html lang="en-US">
 
 <head>
 	<meta charset="UTF-8">
@@ -17,21 +13,6 @@
 	<meta name="google-translate-customization" content="a842f5c786ca5660-44745b6d7af869e7-g73cb4b4a1dace44e-11"></meta>
 	<meta name="msvalidate.01" content="0886B4C3481FA7D3F33C41CDEFF70E1E" />
 		
-	<title>Car - PSD Mockups</title>
-
-	<link rel="pingback" href="https://www.psdmockups.com/xmlrpc.php">
-
-    	<script type="text/javascript">
-      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-    
-      ga('create', 'UA-39574823-1', 'psdmockups.com');
-      ga('require', 'displayfeatures');
-      ga('send', 'pageview');
-    
-    </script>
 
 	<title>Car - PSD Mockups</title>
 <script>document.documentElement.className = document.documentElement.className.replace("no-js","js");</script>
@@ -116,54 +97,6 @@ bb2_addLoadEvent(function() {
 
 <body>
 
-       <br />
-    <asp:DropDownList ID="DropDownList1" runat="server">
-        <asp:ListItem>Açores</asp:ListItem>
-        <asp:ListItem>Madeira</asp:ListItem>
-        <asp:ListItem>Aveiro</asp:ListItem>
-        <asp:ListItem>Beja</asp:ListItem>
-        <asp:ListItem>Braga</asp:ListItem>
-        <asp:ListItem>Bragança</asp:ListItem>
-        <asp:ListItem>Castelo Branco</asp:ListItem>
-        <asp:ListItem>Coimbra</asp:ListItem>
-        <asp:ListItem>Évora</asp:ListItem>
-        <asp:ListItem>Faro</asp:ListItem>
-        <asp:ListItem>Guarda</asp:ListItem>
-        <asp:ListItem>Leiria</asp:ListItem>
-        <asp:ListItem>Lisboa</asp:ListItem>
-        <asp:ListItem>Portalegre</asp:ListItem>
-        <asp:ListItem>Porto</asp:ListItem>
-        <asp:ListItem>Santarém</asp:ListItem>
-        <asp:ListItem>Setubal</asp:ListItem>
-        <asp:ListItem>Viana do Castelo</asp:ListItem>
-        <asp:ListItem>Vila Real</asp:ListItem>
-
-    </asp:DropDownList>
-    <asp:DropDownList ID="DropDownList2" runat="server">
-        <asp:ListItem>Açores</asp:ListItem>
-        <asp:ListItem>Madeira</asp:ListItem>
-        <asp:ListItem>Aveiro</asp:ListItem>
-        <asp:ListItem>Beja</asp:ListItem>
-        <asp:ListItem>Braga</asp:ListItem>
-        <asp:ListItem>Bragança</asp:ListItem>
-        <asp:ListItem>Castelo Branco</asp:ListItem>
-        <asp:ListItem>Coimbra</asp:ListItem>
-        <asp:ListItem>Évora</asp:ListItem>
-        <asp:ListItem>Faro</asp:ListItem>
-        <asp:ListItem>Guarda</asp:ListItem>
-        <asp:ListItem>Leiria</asp:ListItem>
-        <asp:ListItem>Lisboa</asp:ListItem>
-        <asp:ListItem>Portalegre</asp:ListItem>
-        <asp:ListItem>Porto</asp:ListItem>
-        <asp:ListItem>Santarém</asp:ListItem>
-        <asp:ListItem>Setubal</asp:ListItem>
-        <asp:ListItem>Viana do Castelo</asp:ListItem>
-        <asp:ListItem>Vila Real</asp:ListItem>
-
-    </asp:DropDownList>
-
-    <br />
-        <br />
     <hr />
 <script src="https://www.psdmockups.com/wp-content/themes/psdmockups/js/ads.js"></script>
 
@@ -180,22 +113,12 @@ bb2_addLoadEvent(function() {
 									<nav class="nav-container group" id="nav-header">
 						<div class="nav-toggle"><i class="fa fa-bars"></i></div>
 						<div class="site-logo-mobile"><a href="/"><img src="https://www.psdmockups.com/wp-content/themes/psdmockups/img/site-logo-mobile.png" alt="Home" /></a></div>
-						<div class="nav-text"><!-- put your mobile menu text here --></div>
-						<div class="nav-wrap container"><div class="site-logo"><a href="/"><img src="https://www.psdmockups.com/wp-content/themes/psdmockups/img/site-logo-mini.png" alt="Home" /></a></div><ul id="menu-psdmockups" class="nav group"><li id="menu-item-2594" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2594"><a href="https://www.psdmockups.com/category/design/">DESIGN</a></li>
-<li id="menu-item-2596" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2596"><a href="https://www.psdmockups.com/category/resources/">RESOURCES</a></li>
-<li id="menu-item-2595" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2595"><a href="https://www.psdmockups.com/category/prototyping/">PROTOTYPING</a></li>
-<li id="menu-item-2593" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2593"><a href="https://www.psdmockups.com/category/code/">CODE</a></li>
-<li id="menu-item-2592" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2592"><a href="https://www.psdmockups.com/category/ux/">UX</a></li>
-</ul></div>
-					
-							<div class="toggle-search"><i class="fa fa-search"></i></div>
+						<div class="nav-text">
+                            <!-- put your mobile menu text here --></div>
+
 							<div class="search-expand">
 								<div class="search-expand-inner">
-									<form method="get" class="searchform themeform" action="https://www.psdmockups.com/">
-	<div>
-		<input type="text" class="search" name="s" onblur="if(this.value=='')this.value='To search type and hit enter';" onfocus="if(this.value=='To search type and hit enter')this.value='';" value="To search type and hit enter" />
-	</div>
-</form>								</div>
+																	</div>
 							</div>
 
 					
@@ -225,19 +148,16 @@ bb2_addLoadEvent(function() {
 					<option disabled>POPULAR CATEGORIES</option>
 					
 															
-																								<option value="psdmockups">PSD Mockups</option>
 								<option value="psdmockups">PSD Mockups</option>
-					
-										<option value>Entire Site</option>
-					
-															<option disabled>───────────</option>
-					
-										<option value="packaging">Packaging</option>
-					<option value="photoshop">Photoshop</option>
-					<option value="assets">Assets</option>
-					<option value="prototype-tools">Prototype Tools</option>
-					<option value="ux">UX</option>
-					<option value="ui-kits">UI Kits</option>
+								<option value="psdmockups">PSD Mockups</option>
+					            <option value>Entire Site</option>
+					            <option disabled>───────────</option>
+                                <option value="packaging">Packaging</option>
+					            <option value="photoshop">Photoshop</option>
+					            <option value="assets">Assets</option>
+					            <option value="prototype-tools">Prototype Tools</option>
+					            <option value="ux">UX</option>
+					            <option value="ui-kits">UI Kits</option>
 				</select>
 			</li>
 			</fieldset>
@@ -887,6 +807,5 @@ var WPGroHo = {"my_hash":""};
 </script>
 </div>
 </body>
-</html>
     
 </asp:Content>

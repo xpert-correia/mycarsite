@@ -70,7 +70,6 @@ public partial class Registo_Utilizador : System.Web.UI.Page
     protected void Button1_Click(object sender, EventArgs e)
     {
 
-
         bool sucesso;
         Pessoas pess = new Pessoas();
         pess.Nome = nome.Text;
@@ -82,12 +81,45 @@ public partial class Registo_Utilizador : System.Web.UI.Page
         pess.Telefone = telefone.Text;
         pess.Username = username.Text;
         pess.Password = password.Text;
-        pess.Nif = Int64.Parse(nif.Text);
-        pess.Nib = Int64.Parse(nib.Text);
-        pess.Iban = Int64.Parse(iban.Text);
-        pess.DataNascimento = Convert.ToDateTime(Datanascimento.Text);
-        pess.Datainscricao = Convert.ToDateTime(Dataincricao.Text);
-        pess.Dataremocao = Convert.ToDateTime(Dataremocao.Text);
+        //pess.Nif = Int64.Parse(nif.Text);
+        if (nif.Text=="")
+        {
+            pess.Nif = 0;
+        }
+        else
+        {
+            pess.Nif = Int64.Parse(nif.Text);
+        }
+        //pess.Nib = Int64.Parse(nib.Text);
+        if (nib.Text == "")
+        {
+            pess.Nib = 0;
+        }
+        else
+        {
+            pess.Nib = Int64.Parse(nib.Text);
+        }
+        //pess.Iban = Int64.Parse(iban.Text);
+        if (iban.Text == "")
+        {
+            pess.Iban = 0;
+        }
+        else
+        {
+            pess.Iban = Int64.Parse(nif.Text);
+        }
+        //pess.DataNascimento = Convert.ToDateTime(Datanascimento.Text);
+        if (Datanascimento.Text == "")
+        {
+            pess.DataNascimento = DateTime.Now;
+            pess.DataNascimento = Convert.ToDateTime("01/01/1900");
+        }
+        else
+        {
+            pess.DataNascimento = Convert.ToDateTime(Datanascimento.Text);
+        }
+        pess.Datainscricao = DateTime.Now;
+        //pess.Dataremocao = Convert.ToDateTime(Dataremocao.Text);
 
         sucesso = Registar(pess);
 

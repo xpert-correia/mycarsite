@@ -23,7 +23,7 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", Arial, Helvetica, sans-serif}
     <h2>A partir de €9999</h2>
     <h6>per night</h6>
     <hr>
-    <form action="/action_page.php" target="_blank">
+
       <p><label><i class="fa fa-calendar-check-o"></i> Check In</label></p>
       <input class="w3-input w3-border" type="text" placeholder="DD MM YYYY" name="CheckIn" required>          
       <p><label><i class="fa fa-calendar-o"></i> Check Out</label></p>
@@ -33,7 +33,7 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", Arial, Helvetica, sans-serif}
       <p><label><i class="fa fa-child"></i> Kids</label></p>
       <input class="w3-input w3-border" type="number" value="0" name="Kids" min="0" max="6">
       <p><button class="w3-button w3-block w3-green w3-left-align" type="submit"><i class="fa fa-search w3-margin-right"></i> Search availability</button></p>
-    </form>
+
   </div>
   <div class="w3-bar-block">
     <a href="#apartment" class="w3-bar-item w3-button w3-padding-16"><i class="fa fa-building"></i> Apartment</a>

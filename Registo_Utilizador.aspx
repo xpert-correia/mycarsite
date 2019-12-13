@@ -73,6 +73,8 @@
         <hr />
     </div>
     <div>
+            <br />
+            <br />
             <asp:Button ID="Button1" runat="server" Text="Gravar" OnClick="Button1_Click" /> <asp:Button ID="Button2" runat="server" Text="Cancelar" />
             <asp:Button ID="Update" runat="server" OnClick="Update_Click" Text="Update" />
     </div>
