@@ -1,0 +1,14 @@
+﻿<?xml version="1.0"?>
+<!-- 
+  Visual Studio global web project settings.
+-->
+<VisualWebDeveloper>
+
+  <Globals>
+    
+  
+    
+  
+    <UserProperties Content_4bootstrap-theme_1css_1map__JSONSchema="http://json.schemastore.org/travis"/>
+  </Globals>
+</VisualWebDeveloper>
