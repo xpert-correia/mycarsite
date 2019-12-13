@@ -7,8 +7,8 @@
         <img src="Images/carro.png" />
         <br />
         <br />
-        <p class="lead">CARSITE is Our business is built around our people, and we believe happy employees do the best work. We invest in our colleagues and work hard to ensure our diverse teams are supported, included and inspired</p>
-        <p><a href="http://www.asp.net" class="btn btn-primary btn-lg">Learn more &raquo;</a></p>
+        <p class="lead">CARSITE is Our business, is built around our people, and we believe happy employees do the best work. We invest in our colleagues and work hard to ensure our diverse teams are supported, included and inspired</p>
+      <p><%--<a href="http://www.asp.net" class="btn btn-primary btn-lg">Learn more &raquo;</a>--%></p>
     </div>
 
     <div class="row">
