@@ -30,8 +30,6 @@ public partial class Login : System.Web.UI.Page
 
         cmd.CommandType = CommandType.Text;
 
-
-
         cmd.Parameters.Add(new SqlParameter("@username", SqlDbType.NVarChar)).Value = UserName.Text;
 
 
