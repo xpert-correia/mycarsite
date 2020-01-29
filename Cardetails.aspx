@@ -10,154 +10,110 @@
 <link href="Content/w3css.css" rel="stylesheet" />
 
 <style>
-body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", Arial, Helvetica, sans-serif}
+body,h1,h2,h3,h4,h5,h6 {font-family: "Helvetica", Arial, Raleway, sans-serif}
 .mySlides {display: none}
 </style>
 
-
-<!-- Sidebar/menu -->
-<nav class="w3-sidebar w3-light-grey w3-collapse " style="z-index:3;width:260px" id="mySidebar">
-  <div class="w3-container w3-display-container w3-padding-16">
-    <i onclick="w3_close()" class="fa fa-remove w3-hide-large w3-button w3-transparent w3-display-topright"></i>
-    <h3>Rental</h3>
-    <h2>A partir de €9999</h2>
-    <h6>per night</h6>
-    <hr>
-
-      <p><label><i class="fa fa-calendar-check-o"></i> Check In</label></p>
-      <input class="w3-input w3-border" type="text" placeholder="DD MM YYYY" name="CheckIn" required>          
-      <p><label><i class="fa fa-calendar-o"></i> Check Out</label></p>
-      <input class="w3-input w3-border" type="text" placeholder="DD MM YYYY" name="CheckOut" required>         
-      <p><label><i class="fa fa-male"></i> Adults</label></p>
-      <input class="w3-input w3-border" type="number" value="1" name="Adults" min="1" max="6">              
-      <p><label><i class="fa fa-child"></i> Kids</label></p>
-      <input class="w3-input w3-border" type="number" value="0" name="Kids" min="0" max="6">
-      <p><button class="w3-button w3-block w3-green w3-left-align" type="submit"><i class="fa fa-search w3-margin-right"></i> Search availability</button></p>
-
-  </div>
-  <div class="w3-bar-block">
-    <a href="#apartment" class="w3-bar-item w3-button w3-padding-16"><i class="fa fa-building"></i> Apartment</a>
-    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-padding-16" onclick="document.getElementById('subscribe').style.display='block'"><i class="fa fa-rss"></i> Subscribe</a>
-    <a href="#contact" class="w3-bar-item w3-button w3-padding-16"><i class="fa fa-envelope"></i> Contact</a>
-  </div>
-</nav>
-
-<!-- Top menu on small screens -->
-<header class="w3-bar w3-top w3-hide-large w3-black w3-xlarge">
-  <span class="w3-bar-item">Rental</span>
-  <a href="javascript:void(0)" class="w3-right w3-bar-item w3-button" onclick="w3_open()"><i class="fa fa-bars"></i></a>
-</header>
-
-<!-- Overlay effect when opening sidebar on small screens -->
-<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
-
-<!-- !PAGE CONTENT! -->
-<div class="w3-main w3-white" style="margin-left:260px">
-
-  <!-- Push down content on small screens -->
-  <div class="w3-hide-large" style="margin-top:80px"></div>
+     
+   
 
   <!-- Slideshow Header -->
-  <div class="w3-container" id="apartment">
-    <h2 class="w3-text-green">#Marca</h2>
+  <div class="w3-container" id="Car">
+    <h4 class="w3-text-red">127 750 EUR</h4>
     <div class="w3-display-container mySlides">
-    <img src="Images/livingroom.jpg" style="width:100%;margin-bottom:-6px">
+    <img src="Images/Upload/16tdieulhd_GT-R_NISMO_Helios_002.jpg.ximg.l_12_m.smart.jpg" style="width:100%;margin-bottom:-6px">
       <div class="w3-display-bottomleft w3-container w3-black">
-        <p>Living Room</p>
+        <p>GT-R_Helios_002</p>
       </div>
     </div>
     <div class="w3-display-container mySlides">
-    <img src="Images/diningroom.jpg" style="width:100%;margin-bottom:-6px">
+    <img src="Images/Upload/16tdieulhd_GT-R_NISMO_Helios_007.jpg.ximg.l_full_m.smart.jpg" style="width:100%;margin-bottom:-6px">
       <div class="w3-display-bottomleft w3-container w3-black">
-        <p>Dining Room</p>
+        <p>GT-R_Helios_007</p>
       </div>
     </div>
     <div class="w3-display-container mySlides">
-    <img src="Images/bedroom.jpg" style="width:100%;margin-bottom:-6px">
+        <img src="Images/Upload/17TDIeulhd_GTRHelios142.jpg.ximg.l_12_m.smart.jpg" style="width:100%;margin-bottom:-6px">
       <div class="w3-display-bottomleft w3-container w3-black">
-        <p>Bedroom</p>
+        <p>GTRHelios142</p>
       </div>
     </div>
     <div class="w3-display-container mySlides">
-    <img src="Images/livingroom2.jpg" style="width:100%;margin-bottom:-6px">
+        <img src="Images/Upload/19TDIEURHD_GT-R_004_reverse-bkp.jpg.ximg.l_12_m.smart.jpg" style="width:100%;margin-bottom:-6px">
       <div class="w3-display-bottomleft w3-container w3-black">
-        <p>Living Room II</p>
+        <p>GT-R_004</p>
       </div>
     </div>
   </div>
   <div class="w3-row-padding w3-section">
     <div class="w3-col s3">
-      <img class="demo w3-opacity w3-hover-opacity-off" src="Images/livingroom.jpg" style="width:100%;cursor:pointer" onclick="currentDiv(1)" title="Living room">
+      <img class="demo w3-opacity w3-hover-opacity-off" src="Images/Upload/16tdieulhd_GT-R_NISMO_Helios_002.jpg.ximg.l_12_m.smart.jpg" style="width:100%;cursor:pointer" onclick="currentDiv(1)" title="GT-R_NISMO">
     </div>
     <div class="w3-col s3">
-      <img class="demo w3-opacity w3-hover-opacity-off" src="Images/diningroom.jpg" style="width:100%;cursor:pointer" onclick="currentDiv(2)" title="Dining room">
+      <img class="demo w3-opacity w3-hover-opacity-off" src="Images/Upload/16tdieulhd_GT-R_NISMO_Helios_007.jpg.ximg.l_full_m.smart.jpg" style="width:100%;cursor:pointer" onclick="currentDiv(2)" title="GT-R_NISMO_Helios_007">
     </div>
     <div class="w3-col s3">
-      <img class="demo w3-opacity w3-hover-opacity-off" src="Images/bedroom.jpg" style="width:100%;cursor:pointer" onclick="currentDiv(3)" title="Bedroom">
+      <img class="demo w3-opacity w3-hover-opacity-off" src="Images/Upload/17TDIeulhd_GTRHelios142.jpg.ximg.l_12_m.smart.jpg" style="width:100%;cursor:pointer" onclick="currentDiv(3)" title="GTRHelios142">
     </div>
     <div class="w3-col s3">
-      <img class="demo w3-opacity w3-hover-opacity-off" src="Images/livingroom2.jpg" style="width:100%;cursor:pointer" onclick="currentDiv(4)" title="Second Living Room">
+      <img class="demo w3-opacity w3-hover-opacity-off" src="Images/Upload/19TDIEURHD_GT-R_004_reverse-bkp.jpg.ximg.l_12_m.smart.jpg" style="width:100%;cursor:pointer" onclick="currentDiv(4)" title="GT-R_004">
     </div>
   </div>
 
   <div class="w3-container">
-    <h4><strong>The space</strong></h4>
+    <h4><strong>Detalhes</strong></h4>
     <div class="w3-row w3-large">
       <div class="w3-col s6">
-        <p><i class="fa fa-fw fa-male"></i> Max people: 4</p>
-        <p><i class="fa fa-fw fa-bath"></i> Bathrooms: 2</p>
-        <p><i class="fa fa-fw fa-bed"></i> Bedrooms: 1</p>
+        <p><i class="fa fa-fw fa-clock-o"></i> Marca: Nissan</p>
+        <p><i class="fa fa-fw fa-clock-o"></i> Modelo: GT-R</p>
+        <p><i class="fa fa-fw fa-clock-o"></i> Versão: Black Edition</p>
+        <p><i class="fa fa-fw fa-clock-o"></i> Combustível: Gasolina</p>
+        <p><i class="fa fa-fw fa-clock-o"></i> Mês de Registo: Fevereiro</p>
+        <p><i class="fa fa-fw fa-clock-o"></i> Ano de Registo: 2016</p>
       </div>
       <div class="w3-col s6">
-        <p><i class="fa fa-fw fa-clock-o"></i> Check In: After 3PM</p>
-        <p><i class="fa fa-fw fa-clock-o"></i> Check Out: 12PM</p>
+        <p><i class="fa fa-fw fa-clock-o"></i> Quilómetros: 14 280 km</p>
+        <p><i class="fa fa-fw fa-clock-o"></i> Cilindrada: 3 799 cm3</p>
+        <p><i class="fa fa-fw fa-clock-o"></i> Potência: 550 cv</p>
+        <p><i class="fa fa-fw fa-clock-o"></i> Segmento: Coupé</p>
       </div>
     </div>
     <hr>
     
-    <h4><strong>Amenities</strong></h4>
-    <div class="w3-row w3-large">
-      <div class="w3-col s6">
-        <p><i class="fa fa-fw fa-shower"></i> Shower</p>
-        <p><i class="fa fa-fw fa-wifi"></i> WiFi</p>
-        <p><i class="fa fa-fw fa-tv"></i> TV</p>
-      </div>
-      <div class="w3-col s6">
-        <p><i class="fa fa-fw fa-cutlery"></i> Kitchen</p>
-        <p><i class="fa fa-fw fa-thermometer"></i> Heating</p>
-        <p><i class="fa fa-fw fa-wheelchair"></i> Accessible</p>
-      </div>
-    </div>
-    <hr>
+
     
     <h4><strong>Extra Info</strong></h4>
-    <p>Our apartment is really clean and we like to keep it that way. Enjoy the lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    <p>
+    Carro Nacional. <br />
+    Apenas um dono. Carro de garagem. Ainda cheira a novo. Apenas 14.280 Kms. Full Pack de Carbono, Full Extras! Como Novo. Carro para pessoas exigentes. O melhor carro desportivo, aliado a um preço excelente!!
+    <br />
+    NÃO ACEITO RETOMA.</p>
     <p>We accept: <i class="fa fa-credit-card w3-large"></i> <i class="fa fa-cc-mastercard w3-large"></i> <i class="fa fa-cc-amex w3-large"></i> <i class="fa fa-cc-cc-visa w3-large"></i><i class="fa fa-cc-paypal w3-large"></i></p>
     <hr>
     
     <h4><strong>Rules</strong></h4>
     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
     <p>Subscribe to receive updates on available dates and special offers.</p>
-    <p><button class="w3-button w3-green w3-third" onclick="document.getElementById('subscribe').style.display='block'">Subscribe</button></p>
+    <p><button class="w3-button w3-black w3-third" onclick="document.getElementById('subscribe').style.display='block'">Subscribe</button></p>
   </div>
   <hr>
   
   <!-- Contact -->
   <div class="w3-container" id="contact">
     <h2>Contact</h2>
-    <i class="fa fa-map-marker" style="width:30px"></i> Chicago, US<br>
-    <i class="fa fa-phone" style="width:30px"></i> Phone: +00 151515<br>
-    <i class="fa fa-envelope" style="width:30px"> </i> Email: mail@mail.com<br>
-    <p>Questions? Go ahead, ask them:</p>
+    <i class="fa fa-map-marker" style="width:30px"></i> Braga, PT<br>
+    <i class="fa fa-phone" style="width:30px"></i> Phone: +96 9090160<br>
+    <i class="fa fa-envelope" style="width:30px"> </i> Email: xpert_551@hotmail.com<br>
+    <p>Perguntas? Nós repondemos:</p>
     <form action="/action_page.php" target="_blank">
       <p><input class="w3-input w3-border" type="text" placeholder="Name" required name="Name"></p>
       <p><input class="w3-input w3-border" type="text" placeholder="Email" required name="Email"></p>
       <p><input class="w3-input w3-border" type="text" placeholder="Message" required name="Message"></p>
-    <button type="submit" class="w3-button w3-green w3-third">Send a Message</button>
+    <button type="submit" class="w3-button w3-black w3-third">Send a Message</button>
     </form>
   </div>
-  
-  <footer class="w3-container w3-padding-16" style="margin-top:32px">Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></footer>
+<%--  
+  <footer class="w3-container w3-padding-16" style="margin-top:32px">Powered by Mycarsite</footer>--%>
 
 <!-- End page content -->
 </div>
@@ -187,7 +143,7 @@ function w3_close() {
   document.getElementById("myOverlay").style.display = "none";
 }
 
-// Slideshow Apartment Images
+// Slideshow CAR Images
 var slideIndex = 1;
 showDivs(slideIndex);
 

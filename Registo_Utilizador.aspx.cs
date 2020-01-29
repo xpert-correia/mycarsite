@@ -15,7 +15,7 @@ public partial class Registo_Utilizador : System.Web.UI.Page
     {
         get
         {
-            
+
             return @"Server=DESKTOP-7051OE2\SQLEXPRESS;Database=Carsite; Integrated Security=True";
         }
 
@@ -50,7 +50,7 @@ public partial class Registo_Utilizador : System.Web.UI.Page
         pessoa2.Iban = 00350000;
         pessoa2.Nif = 212967819;
 
-        //codigo abaixo gera gridview
+        //codigo abaixo preenche a gridview1
         LstPessoas.Add(pessoa);
         LstPessoas.Add(pessoa2);
         pessoa = new Pessoas();
@@ -62,13 +62,14 @@ public partial class Registo_Utilizador : System.Web.UI.Page
     }
 
 
-        protected void GridView1_SelectedIndexChanged(object sender, EventArgs e)
+    protected void GridView1_SelectedIndexChanged(object sender, EventArgs e)
     {
 
     }
 
     protected void Button1_Click(object sender, EventArgs e)
     {
+
 
         bool sucesso;
         Pessoas pess = new Pessoas();
@@ -81,45 +82,12 @@ public partial class Registo_Utilizador : System.Web.UI.Page
         pess.Telefone = telefone.Text;
         pess.Username = username.Text;
         pess.Password = password.Text;
-        //pess.Nif = Int64.Parse(nif.Text);
-        if (nif.Text=="")
-        {
-            pess.Nif = 0;
-        }
-        else
-        {
-            pess.Nif = Int64.Parse(nif.Text);
-        }
-        //pess.Nib = Int64.Parse(nib.Text);
-        if (nib.Text == "")
-        {
-            pess.Nib = 0;
-        }
-        else
-        {
-            pess.Nib = Int64.Parse(nib.Text);
-        }
-        //pess.Iban = Int64.Parse(iban.Text);
-        if (iban.Text == "")
-        {
-            pess.Iban = 0;
-        }
-        else
-        {
-            pess.Iban = Int64.Parse(nif.Text);
-        }
-        //pess.DataNascimento = Convert.ToDateTime(Datanascimento.Text);
-        if (Datanascimento.Text == "")
-        {
-            pess.DataNascimento = DateTime.Now;
-            pess.DataNascimento = Convert.ToDateTime("01/01/1900");
-        }
-        else
-        {
-            pess.DataNascimento = Convert.ToDateTime(Datanascimento.Text);
-        }
-        pess.Datainscricao = DateTime.Now;
-        //pess.Dataremocao = Convert.ToDateTime(Dataremocao.Text);
+        pess.Nif = Int64.Parse(nif.Text);
+        pess.Nib = Int64.Parse(nib.Text);
+        pess.Iban = Int64.Parse(iban.Text);
+        pess.DataNascimento = Convert.ToDateTime(Datanascimento.Text);
+        pess.Datainscricao = Convert.ToDateTime(Dataincricao.Text);
+        pess.Dataremocao = Convert.ToDateTime(Dataremocao.Text);
 
         sucesso = Registar(pess);
 
@@ -136,17 +104,17 @@ public partial class Registo_Utilizador : System.Web.UI.Page
     {
         bool sucesso = true;
         // aqui inserir exemplo de inserção - adapatação ao trabalho
-          
-            //conexão
-            SqlConnection cn = new SqlConnection();
-            try
-            {
-                // Fazer conexão usando
-                cn.ConnectionString = MyConn;
-                //command
-                SqlCommand cmd = new SqlCommand();
-                cmd.Connection = cn;
-                cmd.CommandType = CommandType.Text;
+
+        //conexão
+        SqlConnection cn = new SqlConnection();
+        try
+        {
+            // Fazer conexão usando
+            cn.ConnectionString = MyConn;
+            //command
+            SqlCommand cmd = new SqlCommand();
+            cmd.Connection = cn;
+            cmd.CommandType = CommandType.Text;
 
             //parâmetros
 
@@ -159,50 +127,35 @@ public partial class Registo_Utilizador : System.Web.UI.Page
             cmd.Parameters.Add(new SqlParameter("@telefone", SqlDbType.NVarChar)).Value = pessoa.Telefone;
             cmd.Parameters.Add(new SqlParameter("@username", SqlDbType.NVarChar)).Value = pessoa.Username;
             cmd.Parameters.Add(new SqlParameter("@password", SqlDbType.NVarChar)).Value = pessoa.Password;
-            cmd.Parameters.Add(new SqlParameter("@nif", SqlDbType.Int)).Value = pessoa.Nif;
-            cmd.Parameters.Add(new SqlParameter("@nib", SqlDbType.Int)).Value = pessoa.Nib;
-            cmd.Parameters.Add(new SqlParameter("@iban", SqlDbType.Int)).Value = pessoa.Iban;
+            cmd.Parameters.Add(new SqlParameter("@nif", SqlDbType.BigInt)).Value = pessoa.Nif;
+            cmd.Parameters.Add(new SqlParameter("@nib", SqlDbType.BigInt)).Value = pessoa.Nib;
+            cmd.Parameters.Add(new SqlParameter("@iban", SqlDbType.BigInt)).Value = pessoa.Iban;
             cmd.Parameters.Add(new SqlParameter("@dataNascimento", SqlDbType.DateTime)).Value = pessoa.DataNascimento;
             cmd.Parameters.Add(new SqlParameter("@datainscricao", SqlDbType.DateTime)).Value = pessoa.Datainscricao;
             cmd.Parameters.Add(new SqlParameter("@dataremocao", SqlDbType.DateTime)).Value = pessoa.Dataremocao;
-            //cmd.Parameters.AddWithValue("@Nome", Nome.Text);
-            //cmd.Parameters.AddWithValue("@Apelido", apelido.Text);
-            //cmd.Parameters.AddWithValue("@Email", email.Text);
-            //cmd.Parameters.AddWithValue("@Morada", morada.Text);
-            //cmd.Parameters.AddWithValue("@Localidade", localidade.Text);
-            //cmd.Parameters.AddWithValue("@CodPostal", codpostal.Text);
-            //cmd.Parameters.AddWithValue("@Telefone", telefone.Text);
-            //cmd.Parameters.AddWithValue("@Username", username.Text);
-            //cmd.Parameters.AddWithValue("@Password", password.Text);
-            //cmd.Parameters.AddWithValue("@Nif", nif);
-            //cmd.Parameters.AddWithValue("@Nib", nib);
-            //cmd.Parameters.AddWithValue("@Iban", iban);
-            //cmd.Parameters.AddWithValue("@DataNascimento", Datanascimento);
-            //cmd.Parameters.AddWithValue("@Datainscricao", Dataincricao);
-            //cmd.Parameters.AddWithValue("@Dataremocao", Dataremocao);
-            //cmd.Parameters.AddWithValue("@Aprovado", Aprovado);
+
             cmd.CommandText = "insert into Pessoas (nome,apelido,email,morada,localidade,codpostal,telefone,username,password,nif,nib,iban,dataNascimento,datainscricao,dataremocao) values (@nome,@apelido,@email,@morada,@localidade,@codpostal,@telefone,@username,@password,@nif,@nib,@iban,@dataNascimento,@datainscricao,@dataremocao)";
             cn.Open();
-                cmd.ExecuteNonQuery();
-            }
-            catch (SqlException ex)
-            {
-                throw new Exception("Servidor SQL Erro:" + ex.Number);
-            }
-            catch (Exception ex)
-            {
-                throw new Exception(ex.Message);
-            }
-            finally
-            {
-                cn.Close();
-            }
+            cmd.ExecuteNonQuery();
+        }
+        catch (SqlException ex)
+        {
+            throw new Exception("Servidor SQL Erro:" + ex.Number);
+        }
+        catch (Exception ex)
+        {
+            throw new Exception(ex.Message);
+        }
+        finally
+        {
+            cn.Close();
+        }
         //******************
         return sucesso;
 
 
 
-  
+
     }
 
     protected void Nome_TextChanged(object sender, EventArgs e)

@@ -75,7 +75,7 @@
                     })), f = c.source || {}, f.concatemoji ? e(f.concatemoji) : f.wpemoji && f.twemoji && (e(f.twemoji), e(f.wpemoji)))
                 }(window, document, window._wpemojiSettings);
             </script>
-            <style type="text/css">
+<%--            <style type="text/css">
                 img.wp-smiley,
                 img.emoji {
                     display: inline !important;
@@ -88,13 +88,13 @@
                     background: none !important;
                     padding: 0 !important;
                 }
-            </style>
-            <link rel='stylesheet' id='iss-css' href='https://www.psdmockups.com/wp-content/plugins/instant-search-suggest/assets/css/iss.css?ver=1479481733' type='text/css' media='all' />
-            <link rel='stylesheet' id='contact-form-7-css' href='https://www.psdmockups.com/wp-content/plugins/contact-form-7/includes/css/styles.css?ver=4.5.1' type='text/css' media='all' />
+            </style>--%>
+<%--            <link rel='stylesheet' id='iss-css' href='https://www.psdmockups.com/wp-content/plugins/instant-search-suggest/assets/css/iss.css?ver=1479481733' type='text/css' media='all' />
+            <link rel='stylesheet' id='contact-form-7-css' href='https://www.psdmockups.com/wp-content/plugins/contact-form-7/includes/css/styles.css?ver=4.5.1' type='text/css' media='all' />--%>
             <link rel='stylesheet' id='style-css' href='https://www.psdmockups.com/wp-content/themes/psdmockups/style.css?ver=4.5.19' type='text/css' media='all' />
-            <link rel='stylesheet' id='responsive-css' href='https://www.psdmockups.com/wp-content/themes/psdmockups/responsive.css?ver=4.5.19' type='text/css' media='all' />
+<%--            <link rel='stylesheet' id='responsive-css' href='https://www.psdmockups.com/wp-content/themes/psdmockups/responsive.css?ver=4.5.19' type='text/css' media='all' />
             <link rel='stylesheet' id='font-awesome-css' href='https://www.psdmockups.com/wp-content/themes/psdmockups/fonts/font-awesome.min.css?ver=4.5.19' type='text/css' media='all' />
-            <link rel='stylesheet' id='jetpack_css-css' href='https://www.psdmockups.com/wp-content/plugins/jetpack/css/jetpack.css?ver=4.3.2' type='text/css' media='all' />
+            <link rel='stylesheet' id='jetpack_css-css' href='https://www.psdmockups.com/wp-content/plugins/jetpack/css/jetpack.css?ver=4.3.2' type='text/css' media='all' />--%>
             <script type='text/javascript' src='https://www.psdmockups.com/wp-includes/js/jquery/jquery.js?ver=1.12.4'></script>
             <script type='text/javascript' src='https://www.psdmockups.com/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1'></script>
             <script type='text/javascript' src='https://www.psdmockups.com/wp-content/themes/psdmockups/js/jquery.highlight-5.js?ver=4.5.19'></script>
@@ -217,22 +217,6 @@
                                             </li>
                                             <li class="psdmockup-confirm">
                                                 <button type="submit" class="submit button" name="submit" value="Search">Search</button>
-                                            </li>
-                                            <li class="psdmockup-filter">
-                                                <select class="psdmockup-category" name="category_name">
-                                                    <option disabled>POPULAR CATEGORIES</option>
-                                                    <option value="psdmockups">PSD Mockups</option>
-                                                    <option value="psdmockups">PSD Mockups</option>
-                                                    <option value>Entire Site</option>
-                                                    <option disabled>───────────</option>
-                                                    <option value="packaging">Packaging</option>
-                                                    <option value="photoshop">Photoshop</option>
-                                                    <option value="assets">Assets</option>
-                                                    <option value="prototype-tools">Prototype Tools</option>
-                                                    <option value="ux">UX</option>
-                                                    <option value="ui-kits">UI Kits</option>
-
-                                                </select>
                                             </li>
                                         </fieldset>
                                     </ul>
@@ -820,99 +804,6 @@
                                     </article>
 
                                 </div>
-                                <!--/.pad-->
-                                <div class="card_default" style="">
-                                    <div class="nm-blog-categories-disabled">
-                                        <div class="nm-blog-grid">
-                                            <div class="nm-row">
-                                                <div></div>
-                                                <div class="nm-card">
-                                                    <div class="ar-wrap">
-                                                        <div class="ar-label">
-                                                            <style>
-                                                                #spinAR {
-                                                                    display: inline-block;
-                                                                    width: 538px;
-                                                                    height: 428px;
-                                                                    background-position: center center;
-                                                                    background-size: auto 100%;
-                                                                    background-image: url("//www.psdmockups.com/wp-content/uploads/2018/10/psdcovers-slideshow-01.jpg");
-                                                                }
-                                                                
-                                                                #spinAR div {
-                                                                    background-color: #ffffff;
-                                                                }
-                                                            </style>
-                                                            <div id="spinAR"></div>
-                                                            <script>
-                                                                (function($) {
-                                                                    $(document).ready(function() {
-                                                                        Player.init({
-                                                                            id: 'spinAR',
-                                                                            transition: '.5s ease-in 0s',
-                                                                            delay: '3',
-                                                                            width: '538',
-                                                                            height: '428',
-                                                                            slide_show: [{
-                                                                                src: 'wp-content/uploads/2018/10/psdcovers-slideshow-01.jpg',
-                                                                                a: 'https://www.psdcovers.com/download/'
-                                                                            }, {
-                                                                                src: 'wp-content/uploads/2018/10/psdcovers-slideshow-02.jpg',
-                                                                                d: 1,
-                                                                                a: 'https://www.psdcovers.com/download/'
-                                                                            }, {
-                                                                                src: 'wp-content/uploads/2018/10/psdcovers-slideshow-03.jpg',
-                                                                                d: 0.2,
-                                                                                a: 'https://www.psdcovers.com/download/'
-                                                                            }, {
-                                                                                src: 'wp-content/uploads/2018/10/psdcovers-slideshow-04.jpg',
-                                                                                d: 0.2,
-                                                                                a: 'https://www.psdcovers.com/download/'
-                                                                            }, {
-                                                                                src: 'wp-content/uploads/2018/10/psdcovers-slideshow-05.jpg',
-                                                                                d: 0.2,
-                                                                                a: 'https://www.psdcovers.com/download/'
-                                                                            }, {
-                                                                                src: 'wp-content/uploads/2018/10/psdcovers-slideshow-06.jpg',
-                                                                                d: 0.2,
-                                                                                a: 'https://www.psdcovers.com/download/'
-                                                                            }, {
-                                                                                src: 'wp-content/uploads/2018/10/psdcovers-slideshow-07.jpg',
-                                                                                d: 1.5,
-                                                                                a: 'https://www.psdcovers.com/download/'
-                                                                            }, {
-                                                                                src: 'wp-content/uploads/2018/10/psdcovers-slideshow-08.jpg',
-                                                                                d: 2.5,
-                                                                                a: 'https://www.psdcovers.com/download/'
-                                                                            }, {
-                                                                                src: 'wp-content/uploads/2018/10/psdcovers-slideshow-09.jpg',
-                                                                                d: 2.5,
-                                                                                a: 'https://www.psdcovers.com/download/'
-                                                                            }, {
-                                                                                src: 'wp-content/uploads/2018/10/psdcovers-slideshow-10.jpg',
-                                                                                d: 2.5,
-                                                                                a: 'https://www.psdcovers.com/download/'
-                                                                            }],
-                                                                            base: '//www.psdmockups.com'
-                                                                        });
-                                                                    });
-                                                                })(jQuery);
-                                                            </script>
-                                                        </div>
-                                                        <div class="ar-attribute">
-                                                            <h3>Transform your 2D designs into glossy 3D mockups in seconds using Photoshop.</h3>
-                                                            <p>
-                                                                <p class="button-pos"><a class="button-outline corner-radius-small" href="https://www.psdcovers.com/download/" target="_blank">Download Free</a></p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <nav class="pagination group">
-                                </nav>
-                                <!--/.pagination-->
                             </section>
                             <!--/.content-->
 
@@ -921,35 +812,6 @@
                     </div>
                     <!--/#page-->
 
-                    <footer id="footer">
-
-                        <section id="footer-bottom">
-                            <div class="container">
-                                <div class="socialcounters">
-
-                                    <div class="social-dark">
-                                        <ul>
-                                            <li><a href="http://twitter.com/psdmockups" target="_blank"><i class="fa fa-twitter"></i></a></li>
-                                            <li><a href="http://www.facebook.com/psdmockups" target="_blank"><i class="fa fa-facebook"></i></a></li>
-                                            <li><a href="http://plus.google.com/110025450510322689741" target="_blank"><i class="fa fa-google-plus"></i></a></li>
-                                        </ul>
-                                    </div>
-
-                                    <div class="footer-links"></div>
-                                    <div id="copyright">
-                                        <p>PSD Mockups &copy; 2019. All Rights Reserved.</p>
-                                    </div>
-                                    <!--/#copyright-->
-
-                                </div>
-                                <!--/.pad-->
-
-                            </div>
-                            <!--/.container-->
-                        </section>
-                        <!--/#footer-bottom-->
-
-                    </footer>
                     <!--/#footer-->
 
                 </div>

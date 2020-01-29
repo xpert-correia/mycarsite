@@ -14,7 +14,7 @@
 <%-- good --%>
    <div class="row">
     <div class="col-md-4">
-    <asp:Label ID="Label1" runat="server" Text="Nome:" Font-Bold="True"></asp:Label><br><asp:TextBox ID="nome" runat="server" CssClass="form-control" OnTextChanged="Nome_TextChanged"></asp:TextBox>
+    <asp:Label ID="Label1" runat="server" Text="Nome:" Font-Bold="True"></asp:Label><br><asp:TextBox ID="nome" runat="server" CssClass="form-control"></asp:TextBox>
     </div>
     <div class="col-md-4">
     <asp:Label ID="Label2" runat="server" Text="Apelido:" Font-Bold="True"></asp:Label><asp:TextBox ID="apelido" runat="server" CssClass="form-control"></asp:TextBox>
@@ -61,7 +61,30 @@
        <div class="col-md-4">
     <asp:Label ID="Label16" runat="server" Text="Aprovado:" Font-Bold="True"></asp:Label><asp:TextBox ID="Aprovado" runat="server" CssClass="form-control"></asp:TextBox>
     </div>
+       <div class="col-md-4">
+           <br />
+           <asp:FileUpload ID="ImageUpload" runat="server" accept=".png, .jpg, .jpeg" CssClass="form-control" />
     </div>
+    </div>
+        
+<%--ASP.NET controls should rather be placed in aspx markup file. That is the preferred way of working with them. So add FileUpload control to your page. Make sure it has all required attributes including ID and runat:
+
+<asp:FileUpload ID="FileUpload1" runat="server" />
+Instance of FileUpload1 will be automatically created in auto-generated/updated *.designer.cs file which is a partial class for your page. You usually do not have to care about what's in it, just assume that any control on an aspx page is automatically instantiated.
+
+Add a button that will do the post back:
+
+<asp:Button ID="Button3" runat="server" Text="Button" onclick="Button1_Click" />
+Then go to your *.aspx.cs file where you have your code and add button click handler. In C# it looks like this:
+
+protected void Button1_Click(object sender, EventArgs e)
+{
+  if (this.FileUpload1.HasFile)
+  {
+    this.FileUpload1.SaveAs("c:\\" + this.FileUpload1.FileName);
+  }
+}
+And that's it. All should work as expected.--%>
     <div>
         <br />
                 <asp:Label ID="mensagem" runat="server" Text="Sucesso/Insucesso"></asp:Label>
